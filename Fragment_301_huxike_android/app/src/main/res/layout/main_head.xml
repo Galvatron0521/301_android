@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    style="@style/title_bar_style" >
+
+    <FrameLayout
+        android:id="@+id/top_head_container"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <com.rilintech.fragment_301_huxike_android.view.ImageCircleView
+            android:id="@+id/top_head"
+            android:layout_width="@dimen/head_size"
+            android:layout_height="@dimen/head_size"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_head"
+            android:padding="2.0dip"
+            android:src="@drawable/logo" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/top_personial"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/touxiang_login" />
+
+    <RelativeLayout
+        android:id="@+id/title_click_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="13.0dip" >
+
+        <FrameLayout
+            android:id="@+id/title_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/title_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="301呼吸科"
+                android:textColor="@color/subscribe_item_normal_bg"
+                android:textSize="20sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    tools:context=".MainActivity">
+
+    <com.rilintech.fragment_301_huxike_android.view.MyScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/mRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <!-- 广告条的使用 -->
+            <com.rilintech.fragment_301_huxike_android.viewpager.MyViewPagerTransformerAnim
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@+id/title_bar" />
+            <!-- 广告条下边的文字 -->
+            <LinearLayout
+                android:id="@+id/viewpager_text"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignBottom="@id/viewpager"
+                android:background="#33000000"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/point_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.rilintech.fragment_301_huxike_android.fragment.DraggableGridViewPager
+                android:id="@+id/draggable_grid_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mScrollView"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/clock"
+                    android:gravity="center"
+                    android:tag="1"
+                    android:textColor="#FFF"></TextView>
+            </com.rilintech.fragment_301_huxike_android.fragment.DraggableGridViewPager>
+
+        </LinearLayout>
+
+
+    </com.rilintech.fragment_301_huxike_android.view.MyScrollView>
+
+
+</RelativeLayout>

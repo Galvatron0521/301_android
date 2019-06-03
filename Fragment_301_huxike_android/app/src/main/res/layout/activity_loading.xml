@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:background="@drawable/loading_bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:src="@drawable/logo"
+            android:textColor="@color/theme_background"
+            android:textSize="36sp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:textStyle="italic|bold" />
+
+
+        <TextView
+            android:paddingBottom="@dimen/margin_15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="bottom|center_horizontal"
+            android:text="北京瑞林萨尔科技有限公司"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical" >
+    
+<!-- <TextView
+        android:id="@+id/vote_submit_tabbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#dddd00"
+        android:gravity="center"
+        android:text="标题栏"
+        android:textColor="#000000" /> -->
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_hight_40" />
+
+    <RelativeLayout
+        android:id="@+id/vote_submit_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff" >
+
+        <com.rilintech.fragment_301_huxike_android.viewpager.VoteSubmitViewPager
+            android:id="@+id/vote_submit_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/vote_submit_linear_dot"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+</LinearLayout>

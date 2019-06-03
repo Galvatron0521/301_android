@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+   >
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_hight_40"
+        android:background="@color/mBlue">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="@dimen/home_menu_margin_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_selector"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:visibility="invisible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/marginLeft_5"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="如何正确使用吸入性哮喘／慢阻肺疾病治疗药物（一）"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2015-03-13  红围巾关爱行动"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="      如今支气管哮喘和慢性阻塞性肺疾病（简称：慢阻肺）是一种常见的慢性呼吸道疾病，许多患者或其家属与这类疾病做着长期的“战斗”，严重影响了身心健康，如果患者不能坚持长期的规范治疗，或者未正确使用吸入性药物装置，很可能会导致疾病控制不理想，从而加重患者的经济负担及心理压力，更有甚者可能导致疾病加重。所以吸入性药物的正确操作与药物治疗疗程同等重要。本期让我们通过视频先来了解一下干粉吸入性治疗药物装置正确的使用方法。"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（一）布地奈德福莫特罗粉吸入剂"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="200dp">
+    <SurfaceView
+        android:layout_marginTop="10dp"
+        android:id="@+id/surfaceView1"
+        android:keepScreenOn="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+        <ImageView
+            android:id="@+id/image_s"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/vedio"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginTop="2dp"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="播放" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="暂停" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/stop"
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="停止" />
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
